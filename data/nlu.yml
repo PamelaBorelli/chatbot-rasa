@@ -1,0 +1,41 @@
+version: "3.1"
+
+nlu:
+- intent: saudacao
+  examples: |
+    - Olá
+    - Oi
+    - Bom dia
+    - Boa tarde
+    - Boa noite
+
+- intent: adeus
+  examples: |
+    - Tchau
+    - Até logo
+    - Até mais
+
+- intent: agradecimento
+  examples: |
+    - Obrigado
+    - Valeu
+    - Agradeço
+
+- intent: rastreamento_pedido
+  examples: |
+    - Quero rastrear meu pedido
+    - Como posso rastrear meu pedido?
+    - Meu pedido ainda não chegou
+
+- intent: devolucao
+  examples: |
+    - Preciso devolver um item
+    - Como faço para devolver um pedido?
+    - Quero iniciar uma devolução
+
+- intent: feedback
+  examples: |
+    - Quero deixar um feedback
+    - Como posso dar minha opinião?
+    - Tenho uma sugestão para a empresa
+

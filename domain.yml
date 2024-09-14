@@ -1,0 +1,28 @@
+version: "3.1"
+
+intents:
+  - saudacao
+  - agradecimento
+  - rastreamento_pedido
+  - devolucao
+  - feedback
+  - goodbye  
+
+responses:
+  utter_saudacao:
+    - text: "Olá! Como posso ajudar você hoje?"
+  utter_agradecimento:
+    - text: "Obrigado por entrar em contato! Se precisar de mais ajuda, estou aqui."
+  utter_rastreamento_pedido:
+    - text: "Para rastrear seu pedido, por favor forneça o número do pedido."
+  utter_devolucao:
+    - text: "Para iniciar o processo de devolução, por favor forneça o número do pedido."
+  utter_feedback:
+    - text: "Sua opinião é importante para nós! Por favor, deixe seu feedback."
+  utter_goodbye: 
+    - text: "Obrigado por entrar em contato. Até logo!"
+  utter_adeus: 
+    - text: "Obrigado por entrar em contato. Até logo!"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
