@@ -1,4 +1,12 @@
-version: "3.1"
+slots:
+  pedido:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+
+entities:
+  - pedido
 
 intents:
   - saudacao
@@ -6,7 +14,16 @@ intents:
   - rastreamento_pedido
   - devolucao
   - feedback
-  - goodbye  
+  - goodbye
+  - informar_pedido
+  - adeus
+
+actions:
+  - action_pedir_numero_pedido
+  - action_rastreamento_pedido
+  - action_devolucao
+  - utter_rastreamento_pedido
+  - utter_devolucao
 
 responses:
   utter_saudacao:
@@ -23,6 +40,7 @@ responses:
     - text: "Obrigado por entrar em contato. Até logo!"
   utter_adeus: 
     - text: "Obrigado por entrar em contato. Até logo!"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

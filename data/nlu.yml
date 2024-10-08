@@ -39,3 +39,10 @@ nlu:
     - Como posso dar minha opinião?
     - Tenho uma sugestão para a empresa
 
+- intent: informar_pedido
+  examples: |
+    - Meu número de pedido é 12345
+    - O pedido é 67890
+    - Pedido número 112233
+    - O número do pedido é 456789
+    - 987654 é o número do pedido

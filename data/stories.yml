@@ -24,6 +24,20 @@ stories:
       - action: utter_agradecimento
 
   - story: adeus
-      steps:
-        - intent: adeus
-        - action: utter_adeus
+    steps:
+      - intent: adeus
+      - action: utter_adeus
+
+  - story: rastreamento pedido sem número
+    steps:
+      - intent: rastreamento_pedido
+      - action: action_pedir_numero_pedido
+      - intent: informar_pedido
+      - action: action_rastreamento_pedido
+
+  - story: devolução sem número
+    steps:
+      - intent: devolucao
+      - action: action_pedir_numero_pedido
+      - intent: informar_pedido
+      - action: action_devolucao
